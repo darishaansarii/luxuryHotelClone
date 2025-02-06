@@ -21,20 +21,11 @@
 }
 
 .header {
-    background-image: url("./images/big_image_1.jpg");
-
-    opacity: 0.7;
-    /* position: relative; */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url("./images/big_image_1.jpg");
+    background-size: cover;
+    background-position: center;
 }
-
-/* .header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6));
-    z-index: 1;
-} */
 
 .btn-primary {
     background-color: #B99365;
@@ -64,7 +55,23 @@
     font-size: 3rem;
 }
 
-.box-1 p {
+.fs-p-big {
+    font-size: 2.3rem;
+}
+
+.fs-p-small {
+    font-size: 1rem;
+}
+
+.container .box-1 {
+    width: 400px;
+}
+
+.container .box-2 {
+    width: 700px;
+}
+
+.text-grey {
     color: #948d8d;
 }
 
@@ -94,6 +101,109 @@
     color: #B99365;
 }
 
-.foot-1 {
-    width: 200px;
+.foot-1, .foot-2, .foot-3 {
+    width: 300px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.card {
+    width: 300px;
+    border-radius: 0;
+    border: none;
+}
+
+.card-img-top {
+    border-radius: 0;
+}
+
+.bg-color {
+    background-color: #f2f2f2;
+}
+
+.fa-arrow-right {
+    right: 23px;
+}
+
+.foot-3 input {
+    width: 95%;
+}
+
+@media only screen and (max-width: 990px)
+{
+    .navbar {
+        background-color: black;
+        opacity: 0.3;
+    }
+
+    .fs-bigger {
+        font-size: 3rem;
+    }
+
+    .fs-small {
+        font-size: 0.75rem;
+    }
+    
+    .fs-big {
+        font-size: 2rem;
+    }
+
+    .fs-p-big {
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 760px)
+{
+    .card {
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    .fs-bigger {
+        font-size: 2.5rem;
+    }
+
+    .fs-small {
+        font-size: 0.65rem;
+    }
+    
+    .fs-big {
+        font-size: 1.9rem;
+    }
+
+    .fs-p-big {
+        font-size: 1.3rem;
+    }
+
+    .card {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 480px)
+{
+    .fs-bigger {
+        font-size: 2.2rem;
+    }
+
+    .fs-small {
+        font-size: 0.55rem;
+    }
+    
+    .fs-big {
+        font-size: 1.6rem;
+    }
+
+    .fs-p-big {
+        font-size: 1.1rem;
+    }
+
+    .fs-p-small {
+        font-size: 0.8rem;
+    }
 }
